@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--안드로이드9(APL lv28)부터 강화된 네트워크 보안정책으로 인한 오류 방지 코드-->
+<!--모든 cleartext 네트워크 트래픽을 허용 처리-->
+<network-security-config>
+<base-config cleartextTrafficPermitted="true" />
+</network-security-config>

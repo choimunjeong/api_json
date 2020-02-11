@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        //출발역 입력 받음
+        <EditText
+            android:id="@+id/start"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:hint="출발역"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        //도착역 입력 받음
+        <EditText
+            android:id="@+id/end"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:hint="도착역"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        //날짜 입력 받음
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:hint="날짜"/>
+        //검색버튼
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="검색"
+            android:id="@+id/button"/>
+    </LinearLayout>
+
+    //결과화면
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>
+
